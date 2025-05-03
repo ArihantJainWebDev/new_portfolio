@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Base background and text colors */
+    --body-color: rgb(250, 250, 250);
+    --color-white: rgba(255, 255, 255);
+  
+    --text-color-main: #111827;
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-accent: rgb(30, 159, 171);
+  
+    /* Primary accents (Soft Tech + your values) */
+    --primary-color: rgb(110, 87, 224); /* first-color */
+    --primary-hover: rgb(40, 91, 212);  /* first-color-hover */
+  
+    --secondary-color: rgb(0, 201, 255); /* second-color */
+    --highlight-color: rgb(192, 166, 49); /* third-color */
+  
+    --btn-color: #10B981;     /* emerald */
+    --btn-hover: #059669;     /* dark emerald */
+  
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --indicator-color: var(--primary-color);
+  }
+  
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: var(--body-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
