@@ -7,12 +7,14 @@ import Achievements from './pages/achievements/Achievements';
 import Home from './pages/home/Home';
 import Contact from './pages/Contact/Contact';
 import Layout from './components/layout/Layout';
+import Works from './pages/works/Works';
 import './App.css';
 
 const pageVariants = {
   initial: {
+    delay: 0.6,
     opacity: 0,
-    y: 100, // New page comes from below
+    y: 200, // New page comes from below
   },
   animate: {
     opacity: 1,
@@ -32,7 +34,6 @@ const PageTransition = ({ children }) => (
     animate="animate"
     exit="exit"
     variants={pageVariants}
-    key={window.location.pathname} // Ensures that the animation triggers on page change
   >
     {children}
   </motion.div>
@@ -43,7 +44,7 @@ function App() {
 
   return (
     <Layout>
-      <AnimatePresence>
+      <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route
             path="/"
@@ -74,6 +75,14 @@ function App() {
             element={
               <PageTransition>
                 <Services />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/works"
+            element={
+              <PageTransition>
+                <Works />
               </PageTransition>
             }
           />

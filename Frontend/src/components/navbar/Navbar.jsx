@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 
-const pages = ["Home", "About", "Achievements", "Services", "Contact"];
+const pages = ["Home", "About", "Achievements", "Services", "Works", "Contact"];
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const Navbar = () => {
     navigate("/");
   };
 
-  const [setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <nav className="navbar">

@@ -5,6 +5,9 @@
 }
 
 body {
-    background-color: var(--body-color);
     color: var(--text-color-main);
+    background: url(C:\Users\agraw\Documents\new_portfolio\new_portfolio\Frontend\src\assets\bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
